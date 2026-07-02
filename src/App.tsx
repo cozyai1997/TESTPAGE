@@ -270,13 +270,13 @@ function VisualSlider({ prefersReducedMotion }: { prefersReducedMotion: boolean 
           modules={[A11y, Autoplay, EffectFade, Keyboard, Navigation, Pagination]}
           effect="fade"
           loop
-          speed={700}
+          speed={1180}
           keyboard={{ enabled: true }}
           autoplay={
             prefersReducedMotion
               ? false
               : {
-                  delay: 4200,
+                  delay: 4600,
                   disableOnInteraction: false,
                   pauseOnMouseEnter: true,
                 }
@@ -628,13 +628,14 @@ function FieldGallery({ prefersReducedMotion }: { prefersReducedMotion: boolean 
           modules={[A11y, Autoplay, Keyboard, Navigation, Pagination]}
           slidesPerView={1.08}
           spaceBetween={16}
-          speed={600}
+          speed={980}
+          watchSlidesProgress
           keyboard={{ enabled: true }}
           autoplay={
             prefersReducedMotion
               ? false
               : {
-                  delay: 3800,
+                  delay: 4200,
                   disableOnInteraction: false,
                   pauseOnMouseEnter: true,
                 }
