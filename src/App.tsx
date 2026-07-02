@@ -131,7 +131,7 @@ function IntroOverlay({ prefersReducedMotion }: { prefersReducedMotion: boolean 
     }
 
     document.body.classList.toggle("intro-locked", isVisible);
-    const timer = window.setTimeout(() => setIsVisible(false), 4200);
+    const timer = window.setTimeout(() => setIsVisible(false), 6400);
     return () => {
       window.clearTimeout(timer);
       document.body.classList.remove("intro-locked");
@@ -159,7 +159,7 @@ function IntroOverlay({ prefersReducedMotion }: { prefersReducedMotion: boolean 
       <div className="intro__figure intro__figure--three" />
       <div className="intro__words" aria-hidden="true">
         {["FROM", "GROUND", "TO", "SIGNAL"].map((word, index) => (
-          <span key={word} style={{ "--delay": `${index * 0.18}s` } as React.CSSProperties}>
+          <span key={word} style={{ "--delay": `${index * 0.28}s` } as React.CSSProperties}>
             {word}
           </span>
         ))}
